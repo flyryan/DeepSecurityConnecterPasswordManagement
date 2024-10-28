@@ -24,7 +24,7 @@ Each script requires:
 
 ### 1. Retrieve Connector IDs
 
-**Script:** `get_connector_ids.py`
+**Script:** `ListConnectorIDs.py`
 
 This script retrieves the connector IDs for AD Sync, vSphere, and NSX Manager connectors. Use it to gather the IDs needed for the password change scripts.
 
@@ -46,52 +46,52 @@ NSX Manager Connector IDs:
 1. Update `YOUR_API_KEY_HERE` with your Deep Security API key.
 2. Run the script:
    ```bash
-   python get_connector_ids.py
+   python ListConnectorIDs.py
    ```
 
 ### 2. Change AD Sync Connector Password
 
-**Script:** `change_ad_sync_password.py`
+**Script:** `ADSyncConnectorPW.py`
 
 This script updates the password for a specific AD Sync connector in Deep Security Manager.
 
 #### Usage
-1. Retrieve the connector ID using `get_connector_ids.py`.
+1. Retrieve the connector ID using `ListConnectorIDs.py`.
 2. Update `YOUR_API_KEY_HERE` with your API key and replace `connector_id_ldap` with the correct connector ID.
 3. Set the new password in `NEW_PASSWORD_HERE`.
 4. Run the script:
    ```bash
-   python change_ad_sync_password.py
+   python ADSyncConnectorPW.py
    ```
 
 ### 3. Change vSphere Connector Password
 
-**Script:** `change_vsphere_password.py`
+**Script:** `VSphereConnectorPW.py`
 
 This script changes the password for a specific vSphere connector.
 
 #### Usage
-1. Retrieve the connector ID using `get_connector_ids.py`.
+1. Retrieve the connector ID using `ListConnectorIDs.py`.
 2. Update `YOUR_API_KEY_HERE` with your API key and replace `connector_id_vsphere` with the correct connector ID.
 3. Set the new password in `NEW_PASSWORD_HERE`.
 4. Run the script:
    ```bash
-   python change_vsphere_password.py
+   python VSphereConnectorPW.py
    ```
 
 ### 4. Change NSX Manager Connector Password
 
-**Script:** `change_nsx_manager_password.py`
+**Script:** `NSXConnectorPW.py`
 
 This script changes the password for a specific NSX Manager connector.
 
 #### Usage
-1. Retrieve the connector ID using `get_connector_ids.py`.
+1. Retrieve the connector ID using `ListConnectorIDs.py`.
 2. Update `YOUR_API_KEY_HERE` with your API key and replace `nsx_manager_id` with the correct connector ID.
 3. Set the new password in `NEW_PASSWORD_HERE`.
 4. Run the script:
    ```bash
-   python change_nsx_manager_password.py
+   python NSXConnectorPW.py
    ```
 
 ## Important Notes
